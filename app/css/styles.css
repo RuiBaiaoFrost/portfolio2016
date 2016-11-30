@@ -6,6 +6,11 @@
     border-top-right-radius: 5px;
 }
 
+.gallery-container{
+	margin: 0px auto;
+	width: 100%;
+}
+
 .header-title{
 	text-align: center;
 }
@@ -38,6 +43,7 @@
 
 .image-thumbnail{
 	height: 300px;
+	width: 100%;
 	cursor: pointer;
 	
 }

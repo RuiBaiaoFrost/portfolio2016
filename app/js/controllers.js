@@ -13,9 +13,9 @@ PortfolioControllers.controller('HomePageController', ['$scope', '$rootScope', '
 
 			var photoMap = {};
 			angular.forEach($scope.photos, function(entity, key) {
-				photoMap[entity.station.id] = {
-					"name" : entity.station.name,
-					"thumbnail" : entity.station.thumbnail
+				photoMap[entity.image.id] = {
+					"name" : entity.image.name,
+					"thumbnail" : entity.image.thumbnail
 				};
 			});
 
