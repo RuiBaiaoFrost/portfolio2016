@@ -1,15 +1,12 @@
-var TSControllers = angular.module('TSControllers', []);
+var PortfolioControllers = angular.module('PortfolioControllers', []);
 
-TSControllers.controller('HomePageController', ['$scope', '$rootScope', 'PhotoService', 'DataShareService', '$location',
+PortfolioControllers.controller('HomePageController', ['$scope', '$rootScope', 'PhotoService', 'DataShareService', '$location',
 	function($scope, $rootScope, PhotoService, DataShareService, $location){
 
         function init(){
             window.log('controller', 'HomePageController init...');
             $scope.locationFilterName = '';    
         }
-
-		
-
 
 		PhotoService.getPhotos().then(function(resp){
 			$scope.photos = resp.data.entity;
@@ -33,4 +30,43 @@ TSControllers.controller('HomePageController', ['$scope', '$rootScope', 'PhotoSe
         init();
 
 	}
+]);
+
+PortfolioControllers.controller('YoutubePageController', ['$scope','$location',
+    function($scope, $location){
+
+        function init(){
+            window.log('controller', 'YoutubePageController init...');
+            $scope.pageName = 'Youtube';    
+        }        
+
+        init();
+
+    }
+]);
+
+PortfolioControllers.controller('AboutPageController', ['$scope','$location',
+    function($scope, $location){
+
+        function init(){
+            window.log('controller', 'AboutPageController init...');
+            $scope.pageName = 'About';    
+        }        
+
+        init();
+
+    }
+]);
+
+PortfolioControllers.controller('ContactsPageController', ['$scope','$location',
+    function($scope, $location){
+
+        function init(){
+            window.log('controller', 'ContactsPageController init...');
+            $scope.pageName = 'Contacts';    
+        }        
+
+        init();
+
+    }
 ]);

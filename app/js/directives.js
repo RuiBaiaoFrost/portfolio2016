@@ -1,6 +1,6 @@
-var TSDirectives = angular.module('TSDirectives', ['ngResource']);
+var PortfolioDirectives = angular.module('PortfolioDirectives', ['ngResource']);
 
-TSDirectives
+PortfolioDirectives
 .directive('tsDateFormatter', function(){
 	return {
 		restrict: 'A',
@@ -25,9 +25,9 @@ TSDirectives
 	return {
 		restrict: 'E',
 		scope: {
-
+			page: '@'
 		},
-		templateUrl: 'app/partials/portfolio-navigation-bar.html',
+		templateUrl: 'app/partials/directive-portfolio-navigation-bar.html',
 		link: function(scope,element, attrs){
 			
 			function init(){
@@ -46,7 +46,7 @@ TSDirectives
 			criteria:'=',
 			searchPlaceholder:'@'
 		},
-		templateUrl: 'app/partials/portfolio-search-bar.html',
+		templateUrl: 'app/partials/directive-portfolio-search-bar.html',
 		link: function(scope,element, attrs){
 			
 			function init(){
@@ -66,7 +66,7 @@ TSDirectives
 			gallery:'=',
 			locationFilterName:'='
 		},
-		templateUrl: 'app/partials/photo-gallery.html',
+		templateUrl: 'app/partials/directive-photo-gallery.html',
 		link: function(scope,element, attrs){
 			
 			function init(){
@@ -86,7 +86,7 @@ TSDirectives
 			title:'@',
 			subTitle:'@'
 		},
-		templateUrl: 'app/partials/portfolio-header-section.html',
+		templateUrl: 'app/partials/directive-portfolio-header-section.html',
 		link: function(scope,element, attrs){
 			
 			function init(){

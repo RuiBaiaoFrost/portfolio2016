@@ -1,3 +1,11 @@
+.active-tab{
+		border-left: 2px solid #cccccc;
+    border-top: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .header-title{
 	text-align: center;
 }
@@ -6,15 +14,26 @@
 	margin: 10px;
 }
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
+.portfolio-nav {
+	width:750px;
+	margin:0 auto;
+	list-style:none;
+	
 }
 
+.portfolio-nav li{
+	float:left;
+	height:30px;
+	cursor: pointer;
+	padding-top: 5px;
+}
 
-.navbar .navbar-collapse {
-  text-align: center;
+.portfolio-nav a{
+	cursor: pointer;
+	display:block;
+	text-align:center;
+	width:150px; /* fixed width */
+	text-decoration:none; 
 }
 
 .image-thumbnail{
@@ -22,9 +41,9 @@
 	cursor: pointer;
 	
 }
-.image-thumbnail:hover{
-		opacity: 0.8;
-	}
+.clickable:hover{
+	opacity: 0.8;
+}
 
 .sub-title{
 	font-style: italic;

@@ -1,7 +1,7 @@
 var trainsSchedule = angular.module('trainsSchedule', [
 	'ngRoute',
-	'TSControllers',
-	'TSDirectives',
+	'PortfolioControllers',
+	'PortfolioDirectives',
 	'PortfolioServices'
 ]);
 
@@ -11,8 +11,23 @@ trainsSchedule.config(['$routeProvider', '$locationProvider', '$resourceProvider
 		$routeProvider
 			.when('/', {
 				title: 'Home',
-				templateUrl: 'app/partials/home-page.html?' + APP_CACHE_SID,
+				templateUrl: 'app/partials/page-home.html?' + APP_CACHE_SID,
 				controller: 'HomePageController'
+			})
+			.when('/youtube', {
+				title: 'Home',
+				templateUrl: 'app/partials/page-youtube.html?' + APP_CACHE_SID,
+				controller: 'YoutubePageController'
+			})
+			.when('/about', {
+				title: 'Home',
+				templateUrl: 'app/partials/page-about.html?' + APP_CACHE_SID,
+				controller: 'AboutPageController'
+			})
+			.when('/contacts', {
+				title: 'Home',
+				templateUrl: 'app/partials/page-contact.html?' + APP_CACHE_SID,
+				controller: 'ContactsPageController'
 			})
 			
 			.otherwise({
