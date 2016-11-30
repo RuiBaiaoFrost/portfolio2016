@@ -1,0 +1,43 @@
+.header-title{
+	text-align: center;
+}
+
+.margin-10{
+	margin: 10px;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.image-thumbnail{
+	height: 300px;
+	cursor: pointer;
+	
+}
+.image-thumbnail:hover{
+		opacity: 0.8;
+	}
+
+.sub-title{
+	font-style: italic;
+}
+
+.with-top-margin{
+	margin-top: 10px;
+}
+
+.zero-margin{
+	margin: 0;
+	padding: 0;
+}
+
+
+
