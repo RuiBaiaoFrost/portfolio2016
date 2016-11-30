@@ -1,0 +1,33 @@
+<!-- Modal backdrop -->
+<div class="modal-backdrop">	
+</div>
+
+<!-- The Modal -->
+<!-- The Close Button -->
+
+
+<div class="modal-container">  
+
+  <div class="close-button-container">
+  	<div class="close-button clickable" ng-click="closeModal()">&times;</div>
+  </div>	
+
+  <div class="flex-container">
+  	  <!-- Modal Content (The Image) -->
+	  <div class="arrow-column" ng-click="switchImage('previous')">
+	  	<div class="arrow"></div>
+	  </div>
+
+	  <img ng-src="{{ mainImage.thumbnail }}">
+
+	  <div class="arrow-column" ng-click="switchImage('next')">
+	  	<div class="arrow"></div>
+	  </div>
+  </div>
+  
+
+  <!-- Modal Caption (Image Text) -->
+  <div>
+  	<p class="main-image-caption">{{mainImage.name}}</p>
+  </div>
+</div>
