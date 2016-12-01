@@ -1,6 +1,6 @@
 <!-- Modal backdrop -->
-<div class="modal-backdrop">	
-</div>
+<!-- <div class="modal-backdrop">	
+</div> -->
 
 <!-- The Modal -->
 <!-- The Close Button -->
@@ -20,7 +20,9 @@
 	  		 ng-class="{'disabled': mainImage.id === gallery[0].image.id}"></div>
 	  </div>
 
-	  <img class="modal-image-box" ng-src="{{ mainImage.thumbnail }}">
+	  <div class="modal-image-box" >	  
+	  	<img class="modal-image" ng-src="{{ mainImage.thumbnail }}">
+	  </div>
 
 	  <div class="arrow-column">
 	  	<div class="arrow portfolio-icon icon-arrow-right"
@@ -32,6 +34,6 @@
 
   <!-- Modal Caption (Image Text) -->
   <div>
-  	<p class="main-image-caption">{{mainImage.name}} {{mainImage.id}} {{gallery[0].image.id}}</p>
+  	<p class="main-image-caption">{{mainImage.name}}</p>
   </div>
 </div>

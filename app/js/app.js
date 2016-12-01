@@ -1,11 +1,12 @@
-var trainsSchedule = angular.module('trainsSchedule', [
+var portfolioApp = angular.module('portfolioApp', [
 	'ngRoute',
 	'PortfolioControllers',
 	'PortfolioDirectives',
-	'PortfolioServices'
+	'PortfolioServices',
+	'oc.modal',
 ]);
 
-trainsSchedule.config(['$routeProvider', '$locationProvider', '$resourceProvider',
+portfolioApp.config(['$routeProvider', '$locationProvider', '$resourceProvider',
 	function($routeProvider, $locationProvider, $resourceProvider ){
 
 		$routeProvider

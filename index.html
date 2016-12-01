@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" ng-app="trainsSchedule">
+<html lang="en-US" ng-app="portfolioApp">
 
 <head>
     <meta charset="utf-8"/>
@@ -16,11 +16,13 @@
 	<script src="/bower_components/angular-route/angular-route.min.js"></script>
 	<script src="/bower_components/angular-resource/angular-resource.min.js"></script>
     <script src="/bower_components/underscore/underscore-min.js"></script>
+    <script src="/bower_components/ocModal/dist/ocModal.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" type="text/css" href="app/css/styles.css">
     <link rel="stylesheet" type="text/css" href="app/assets/fonts/icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/ocModal/dist/css/ocModal.light.min.css">
 
     <script src="app/js/app.js"></script>
     <script src="app/js/services.js"></script>
@@ -47,9 +49,10 @@
         sub-title="Adapt, Expand, Grow">  
     </portfolio-header-section>
 
-    <div style="border:1px solid black;">
+    <!-- <div style="border:1px solid black;">
         <span aria-hidden="true" class="portfolio-icon icon-arrow-left"></span>    
-    </div>
+    </div> -->
+    
     <div ng-view style="margin-top: 10px;">
 
     </div>
