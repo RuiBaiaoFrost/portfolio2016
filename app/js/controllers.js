@@ -63,7 +63,10 @@ PortfolioControllers.controller('ContactsPageController', ['$scope','$location',
 
         function init(){
             window.log('controller', 'ContactsPageController init...');
-            $scope.pageName = 'Contacts';    
+            
+            $scope.phoneNumber = '+4670 285 7003';
+            $scope.email = 'rui.palma.baiao@gmail.com';
+
         }        
 
         init();

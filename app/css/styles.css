@@ -1,3 +1,7 @@
+body{
+	font-family: monospace;
+}
+
 .active-tab{
 		border-left: 2px solid #cccccc;
     border-top: 2px solid #cccccc;
@@ -13,6 +17,11 @@
 
 .header-title{
 	text-align: center;
+	color: #666;
+
+	h4{
+		    text-shadow: 2px 2px 2px #333;
+	}
 }
 
 .margin-10{
@@ -47,8 +56,13 @@
 	cursor: pointer;
 	
 }
+
+.clickable{
+	cursor: pointer;
+}
+
 .clickable:hover{
-	opacity: 0.8;
+	opacity: 0.6;
 }
 
 .sub-title{
@@ -93,8 +107,7 @@
 
 .modal-image-box{
 	display: block;
-    width:86%;
-    max-height:451px;	 
+    width:86%;	 
     height: auto;
 }
 
@@ -157,9 +170,6 @@
     padding: 12px; 
 }
 
-.portfolio-icon:hover{
-	opacity: 0.8;
-}
 
 .disabled {
 	opacity: 0.5;
@@ -174,6 +184,67 @@
     background: transparent;
 }
 
+
+/* CONTACTS PAGE  */
+.social-container{
+	display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.large-margin-bottom{
+	margin-bottom: 50px;
+}
+
+.social-icon{
+	font-size: 36px;
+	margin-right: 50px;
+	margin-top: 30px;	
+	color: #666;
+
+}
+
+.social-icon a {
+	    color: #666;
+	    text-decoration: none;
+}
+
+.social-icon a:hover 
+{
+     color:#666	; 
+     text-decoration:none; 
+     cursor:pointer;  
+}	
+
+.flex-container-centered{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+.flex-container-centered a {
+	    color: #666;
+	    text-decoration: none;
+}
+
+.flex-container-centered a:hover 
+{
+     color:#666	; 
+     text-decoration:none; 
+     cursor:pointer;  
+}	
+
+.block-container-centered{
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.contact-icon{
+	font-size: 24px;
+	margin-right: 20px;
+	color: #666;
+}
 
 
 
