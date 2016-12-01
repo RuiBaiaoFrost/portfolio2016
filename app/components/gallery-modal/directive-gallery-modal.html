@@ -14,20 +14,24 @@
 
   <div class="flex-container">
   	  <!-- Modal Content (The Image) -->
-	  <div class="arrow-column" ng-click="switchImage('previous')">
-	  	<div class="arrow portfolio-icon icon-arrow-left"></div>
+	  <div class="arrow-column">
+	  	<div class="arrow portfolio-icon icon-arrow-left"
+	  		 ng-click="switchImage('previous')"
+	  		 ng-class="{'disabled': mainImage.id === gallery[0].image.id}"></div>
 	  </div>
 
-	  <img ng-src="{{ mainImage.thumbnail }}">
+	  <img class="modal-image-box" ng-src="{{ mainImage.thumbnail }}">
 
-	  <div class="arrow-column" ng-click="switchImage('next')">
-	  	<div class="arrow portfolio-icon icon-arrow-right"></div>
+	  <div class="arrow-column">
+	  	<div class="arrow portfolio-icon icon-arrow-right"
+	  		 ng-click="switchImage('next')"
+	  		 ng-class="{'disabled': mainImage.id === gallery[gallery.length-1].image.id}"></div>
 	  </div>
   </div>
   
 
   <!-- Modal Caption (Image Text) -->
   <div>
-  	<p class="main-image-caption">{{mainImage.name}}</p>
+  	<p class="main-image-caption">{{mainImage.name}} {{mainImage.id}} {{gallery[0].image.id}}</p>
   </div>
 </div>

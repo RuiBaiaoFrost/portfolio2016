@@ -90,6 +90,14 @@
 	display: flex;
 }
 
+.modal-image-box{
+	display: block;
+	  max-width:90%;
+	  max-height:451px;
+	  width: auto;
+	  height: auto;
+}
+
 .main-image-caption{
 	color: white;
 	font-size: 15px;
@@ -98,8 +106,8 @@
 }
 
 .arrow-column{	   
-    width: 50px;
-    margin-left: 5px;             
+    width: 10%;    
+    background: blue;	             
 }
 
 .arrow{
@@ -109,7 +117,7 @@
 
 
 .right-arrow{
-	background: blue;
+	
     height: 40px;
     width: 40px;
     position: absolute;
@@ -139,12 +147,20 @@
 .portfolio-icon{
 	font-size: 32px;
 	cursor: pointer;    
-    color: #bbb; 
+    color: #bbb;
+    padding: 12px; 
 }
 
 .portfolio-icon:hover{
 	opacity: 0.8;
 }
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+	cursor: default;
+}
+
 
 
 

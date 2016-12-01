@@ -1,5 +1,9 @@
+<div>
+	{{filteredGallery.length}}
+</div>
+
 <div class="gallery-container">
-   <div class="col-lg-4 zero-margin" ng-repeat="entity in gallery | filter:locationFilterName" style="width: 33.3%">
+   <div class="col-lg-4 zero-margin" ng-repeat="entity in filteredGallery = (gallery | filter:locationFilterName)" style="width: 33.3%">
       <div style="width: 100%">
 
         <img ng-src="{{ entity.image.thumbnail }}" alt="{{ entity.image.name }}" class="image-thumbnail clickable" ng-click="openPhotoDetails(entity.image)">
@@ -11,5 +15,5 @@
 <gallery-modal 
 	ng-if="imageSelected" 
 	main-image="imageInModal" 
-	gallery="gallery">
+	gallery="filteredGallery">
 </gallery-modal>
