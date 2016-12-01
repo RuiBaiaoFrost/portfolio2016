@@ -20,7 +20,7 @@ PortfolioDirectives.directive('galleryModal', function(){
 			};
 
 			scope.switchImage = function(direction){
-				console.log('switchImage');	
+				debugger;	
 			}
 
 			init();
