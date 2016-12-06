@@ -170,6 +170,71 @@ body{
     padding: 12px; 
 }
 
+.icon-twitter:hover:after {
+    content: "Twitter";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.icon-facebook:hover:after {
+    content: "Facebook";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.icon-linkedin:hover:after {
+    content: "LinkedIn";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.icon-flickr2:hover:after {
+    content: "Flickr";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.icon-500px:hover:after {
+    content: "500px";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+.icon-youtube:hover:after {
+    content: "Youtube";
+    display: block;
+    position: relative;
+    top: -15px;
+    right: -40px;
+    width: 20px;
+    color: #333;
+    font-size: 12px;
+}
 
 .disabled {
 	opacity: 0.5;
